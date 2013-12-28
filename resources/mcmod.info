@@ -1,0 +1,17 @@
+[
+{
+  "modid": "RSM",
+  "name": "Rocket Sword Mod",
+  "description": "Chuck Mobs Everywere!",
+  "version": "Release - ",
+  "mcversion": "1.6.4",
+  "logoFile": "",
+  "url": "http://minecraft.curseforge.com/mc-mods/rocket-sword-mod/",
+  "updateUrl": "http://minecraft.curseforge.com/mc-mods/rocket-sword-mod/files/",
+  "authors": ["biggles2206"],
+  "credits": "All the People on the Forge Fourms who have helped me develop the mod, and all the Epic Players of the Mod!",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
