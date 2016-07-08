@@ -213,3 +213,17 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+# Idea
+*.iws
+*.ipr
+*.iml
+.idea/
+
+
+# Gradle
+.gradle/
+
+# MCP
+eclipse/
+run/
