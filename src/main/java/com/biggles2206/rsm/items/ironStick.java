@@ -3,22 +3,17 @@ package com.biggles2206.rsm.items;
  * @author biggles2206
  */
 
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import com.biggles2206.rsm.util.Reference;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
 
 public class ironStick extends Item {
 
 	public ironStick() {
 		super();
 		this.setCreativeTab(CreativeTabs.MATERIALS);
-		this.setUnlocalizedName("IronStick");
-	}
-	@SideOnly(Side.CLIENT)
-	public void initModel() {
-		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+		this.setUnlocalizedName(Reference.modItems.IRONSTICK.getUnlocalizedName());
+		this.setRegistryName(Reference.modItems.IRONSTICK.getRegistryName());
 	}
 }

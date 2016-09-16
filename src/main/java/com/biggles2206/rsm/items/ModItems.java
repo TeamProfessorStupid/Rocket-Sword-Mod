@@ -45,6 +45,11 @@ public class ModItems {
 	
 	public static void registerRenders(){
 		registerRender(woodRocketSword);
+		registerRender(stoneRocketSword);
+		registerRender(ironRocketSword);
+		registerRender(goldRocketSword);
+		registerRender(diamondRocketSword);
+		registerRender(ironStick);
 	}
 	
 	public static void registerRender(Item item){

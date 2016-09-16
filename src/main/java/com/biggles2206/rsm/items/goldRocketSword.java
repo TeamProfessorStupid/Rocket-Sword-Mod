@@ -3,15 +3,13 @@ package com.biggles2206.rsm.items;
  * @author biggles2206
  */
 
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import com.biggles2206.rsm.util.Reference;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 
 public class goldRocketSword extends ItemSword {
@@ -22,6 +20,8 @@ public class goldRocketSword extends ItemSword {
 		this.setMaxStackSize(1);
 		this.setMaxDamage(200);
 		this.setUnlocalizedName("GoldRocketSword");
+		this.setUnlocalizedName(Reference.modItems.GOLDROCKETSWORD.getUnlocalizedName());
+		this.setRegistryName(Reference.modItems.GOLDROCKETSWORD.getRegistryName());
 	}
 	public boolean func_111207_a(ItemStack itemstack, EntityPlayer player,
 			EntityLivingBase target) {
@@ -31,11 +31,5 @@ public class goldRocketSword extends ItemSword {
 		}
 		return false;
 	}
-
-	@SideOnly(Side.CLIENT)
-	public void initModel() {
-		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
-	}
-
 }
 
