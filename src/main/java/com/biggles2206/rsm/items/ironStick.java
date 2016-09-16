@@ -1,23 +1,23 @@
 package com.biggles2206.rsm.items;
 /**
  * @author biggles2206
- * @license Minecraft Mod Public Licence 1.0
  */
-import net.minecraft.client.renderer.texture.IconRegister;
+
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.client.model.ModelLoader;
 
 public class ironStick extends Item {
 
-	public ironStick(int par1) {
-		super(par1);
-		this.setCreativeTab(CreativeTabs.tabMaterials);
+	public ironStick() {
+		super();
+		this.setCreativeTab(CreativeTabs.MATERIALS);
 	}
-	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister register) {
-		itemIcon = register.registerIcon("rocket sword mod:ironstick");
+	public void initModel() {
+		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
 	}
 }
