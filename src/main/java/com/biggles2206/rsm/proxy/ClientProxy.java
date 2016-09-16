@@ -1,8 +1,15 @@
 package com.biggles2206.rsm.proxy;
+
+import com.biggles2206.rsm.items.ModItems;
+
 /**
  * @author biggles2206
- * @license Minecraft Mod Public Licence 1.0
  */
-public class ClientProxy extends CommonProxy{
+public class ClientProxy implements CommonProxy{
+
+	@Override
+	public void init() {
+		ModItems.registerRenders();		
+	}
 
 }
