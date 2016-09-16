@@ -19,7 +19,7 @@ public class ModItems {
 	public static Item diamondRocketSword;
 	public static Item ironStick;
 
-	public static void init(){
+	public static void addItems(){
 		
 		woodRocketSword = new woodRocketSword(ToolMaterial.WOOD);
 		stoneRocketSword = new stoneRocketSword(ToolMaterial.STONE);
@@ -41,7 +41,7 @@ public class ModItems {
 		
 	}
 	
-	public static void registerCrafting(){
+	public static void addItemCraftingRecipes(){
 		
 		GameRegistry.addShapedRecipe(new ItemStack(woodRocketSword), new Object[]{
 				
