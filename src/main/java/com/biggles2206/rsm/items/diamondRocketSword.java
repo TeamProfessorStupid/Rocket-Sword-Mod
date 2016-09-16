@@ -20,7 +20,7 @@ public class diamondRocketSword extends ItemSword {
 		this.setCreativeTab(CreativeTabs.COMBAT);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(400);
-		this.setUnlocalizedName("DRS");
+		this.setUnlocalizedName("DiamondRocketSword");
 	}
 	public boolean func_111207_a(ItemStack itemstack, EntityPlayer player,
 			EntityLivingBase target) {

@@ -21,7 +21,7 @@ public class goldRocketSword extends ItemSword {
 		this.setCreativeTab(CreativeTabs.COMBAT);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(200);
-		this.setUnlocalizedName("GRS");
+		this.setUnlocalizedName("GoldRocketSword");
 	}
 	public boolean func_111207_a(ItemStack itemstack, EntityPlayer player,
 			EntityLivingBase target) {

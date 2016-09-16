@@ -15,6 +15,7 @@ public class ironStick extends Item {
 	public ironStick() {
 		super();
 		this.setCreativeTab(CreativeTabs.MATERIALS);
+		this.setUnlocalizedName("IronStick");
 	}
 	@SideOnly(Side.CLIENT)
 	public void initModel() {

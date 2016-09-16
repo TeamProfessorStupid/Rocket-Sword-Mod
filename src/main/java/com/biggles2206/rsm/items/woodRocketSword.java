@@ -19,7 +19,7 @@ public class woodRocketSword extends ItemSword {
 		this.setCreativeTab(CreativeTabs.COMBAT);
 		this.setMaxStackSize(1);
 		this.setMaxDamage(25);
-		this.setUnlocalizedName("WRS");
+		this.setUnlocalizedName("WoodRocketSword");
 	}
 	public boolean func_111207_a(ItemStack itemstack, EntityPlayer player,
 			EntityLivingBase target) {
