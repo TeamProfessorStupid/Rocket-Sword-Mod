@@ -1,7 +1,6 @@
 package com.biggles2206.rsm.lib;
 /**
  * @author biggles2206
- * @license Minecraft Mod Public Licence 1.0
  */
 public class Refence {
 
