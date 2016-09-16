@@ -3,6 +3,8 @@ package com.biggles2206.rsm.items;
  * @author biggles2206
  */
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -31,14 +33,22 @@ public class ModItems {
 	
 	public static void addNames(){
 		
-		GameRegistry.register(woodRocketSword.setRegistryName("Wooden Rocket Sword"));
-		GameRegistry.register(stoneRocketSword.setRegistryName("Stone Rocket Sword"));
-		GameRegistry.register(ironRocketSword.setRegistryName("Iron Rocket Sword"));
-		GameRegistry.register(goldRocketSword.setRegistryName("Gold Rocket Sword"));
-		GameRegistry.register(diamondRocketSword.setRegistryName("Diamond Rocket Sword"));
-		GameRegistry.register(ironStick.setRegistryName("Iron Stick"));
+		GameRegistry.register(woodRocketSword);
+		GameRegistry.register(stoneRocketSword);
+		GameRegistry.register(ironRocketSword);
+		GameRegistry.register(goldRocketSword);
+		GameRegistry.register(diamondRocketSword);
+		GameRegistry.register(ironStick);
 		
 		
+	}
+	
+	public static void registerRenders(){
+		registerRender(woodRocketSword);
+	}
+	
+	public static void registerRender(Item item){
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 	
 	public static void addItemCraftingRecipes(){
@@ -106,11 +116,7 @@ public class ModItems {
 		});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ironStick), new Object[]{
-			"X  ",
-			"X  ",
-			"   ",
-			'X', Items.IRON_INGOT
-						
+			new ItemStack(Items.IRON_INGOT, 0, 2)
 		});
 	} 
 }
